@@ -1,0 +1,205 @@
+body {
+	/*background-image: url("background.jpg");
+    background-repeat: repeat;*/
+		background-color: #f2f2f2
+}
+
+iframe {
+	height: 300px;
+	width: 49.5%;
+
+
+}
+
+.clear { clear: both; }
+
+
+#NAinterest {	width: 500px;
+				height:45px;
+
+
+
+			}
+
+
+
+#initialForm 	{
+					height:170px;
+					width: 700px;
+					border-radius: 100px;
+					background-color: white;
+					position: absolute;
+    				top:0;
+    				bottom: 0;
+    				left: 0;
+    				right: 0;
+    				align-items:center;
+    				display: flex;
+    				justify-content:center;
+
+    		margin: auto;
+				font-size:30px;
+				padding-bottom: 20px
+
+
+				}
+
+
+#openingText{
+	text-align: center
+}
+
+#searchButton {height:40px;
+	margin-top: 5px;
+	position: relative;
+	font-size: 20px;
+	width:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 50px;
+	border-color:#f0f0f5 ;
+
+	border-style: outset;
+	font-weight: bold;
+
+    				top: 5px;
+
+
+		}
+
+#playground {
+	background-color: white;
+	padding: 30px;
+
+}
+
+
+
+#resultContainer {	background-color: white;
+					margin: 60px ;
+					padding: 15px;
+					min-height: 300px;
+					position: relative;
+					max-width: 1000px;
+
+					margin-left:auto;
+	margin-right:auto;
+
+
+
+				}
+
+
+
+
+
+
+
+#player {display: inline-block;
+		float: right;
+		padding: 25px;}
+
+
+
+#test {	height: 40px;
+		width: 40px;
+		background-color: red;
+		display:none;
+
+	}
+
+#YTBttnContain {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+#player1Enlarge {	height: 20px;
+	width: 100px;
+	float:left;
+	display:inline-block;
+	line-height: 75%;
+
+
+
+
+
+	}
+
+#player2Enlarge {	height: 20px;
+		width: 100px;
+		float:left;
+		display:inline-block;
+		line-height: 75%;
+
+
+	}
+
+
+
+
+
+
+
+#headContain {
+	float:left;
+	display:inline-block;
+	margin-right: 25px;
+	margin-bottom: 10px;
+}
+
+
+
+.showContBttn {
+		min-height: 25px;
+		width: 250px;
+		overflow:hidden;
+		cursor: pointer;
+		padding: 3px;
+		border-style: solid;
+		border-color: #BABABA;
+		border-width: 1px;
+		/*background-color: #ffd9b3;*/
+		display:block;
+		border-radius: 3px;
+		margin:1px;
+		color: #666666;
+
+
+
+
+
+
+}
+
+.showContBttn.bSelected{
+	border-color: #8DEDFF;
+	border-width: 2px;
+	color: black;
+}
+
+
+#wikiInsert{ margin-top: 20px}
+
+#contBodies {
+	display:inline;
+	display:none;
+}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

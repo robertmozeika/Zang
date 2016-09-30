@@ -1,0 +1,136 @@
+#initialForm {
+	width: 800px;
+	position: relative;
+	margin-top: 50px;
+	height: 0px;
+	background-color: transparent;
+	margin-bottom: 0px;
+}
+
+#searchButton {
+	display: inline-block;
+	top: -3px;
+	background-color: #e6e6e6;
+}
+
+#NAinterest {
+	display: inline-block;
+}
+
+
+.QFBttn{
+	display:block;
+	min-height: 25px;
+
+		overflow:hidden;
+		cursor: pointer;
+		padding: 3px;
+		border-style: solid;
+		border-color: #BABABA;
+		border-width: 1px;
+		/*background-color: #ffd9b3;*/
+		border-radius: 3px;
+
+
+}
+
+#lifeSpanBttn{
+
+	display:inline-block;
+	max-width: 300px;
+	height: 138px;
+	min-width: 200px;
+
+}
+
+#QFCont{
+	/*background-color: #8DEDFF;*/
+	border-radius: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display:inline-block;
+
+}
+#SciClassTable, th {
+
+	text-align: center;
+
+
+
+}
+#SciClassTable th, td {
+
+	border: 1px solid #e6e6e6;
+
+}
+#SciClassTable, td{
+	width: 200px;
+	height:20px;
+}
+
+#SciClassTable tr:first-child{
+	/*background-color: #C68DFF;*/
+}
+#SciClassTable td{
+/*background-color:#DDBCFF*/
+}
+#SciClassTable {
+	display:inline-block;
+
+}
+
+#sciClassContain{
+	height: 138px
+
+}
+
+tbody{
+	margin-bottom: 60px;
+	font-size: 12px
+}
+
+#LFcont{display:inline-block;
+height: 140px;
+/*flex-basis: 120px*/
+}
+
+
+
+
+#foodCont *{
+	display: inline-block;
+}
+#foodCont{
+	display:inline-block;
+	width:450px;
+	height: 138px;
+	overflow:hidden;
+	cursor: pointer;
+	padding: 3px;
+	border-style: solid;
+	border-color: #BABABA;
+	border-width: 1px;
+	/*background-color: #ffd9b3;*/
+	border-radius: 3px;
+
+
+
+}
+
+#animalQuickFacts {
+	display:flex;
+	justify-content: space-between;;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+
+}
+
+/*#animalQuickFacts * {
+	margin-top: 10px;
+}*/
+
+.foodFacts{
+	background-color: transparent;
+	border-radius: 3px;
+	padding: 5px;
+}

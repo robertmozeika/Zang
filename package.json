@@ -1,0 +1,35 @@
+{
+  "name": "LearnCode",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.2",
+    "express": "~4.13.4",
+    "express-livereload": "0.0.24",
+    "formidable": "^1.0.17",
+    "futures": "^2.3.3",
+    "grunt": "^1.0.1",
+    "hjs": "~0.0.6",
+    "less-middleware": "1.0.x",
+    "mongoose": "^4.5.10",
+    "morgan": "~1.7.0",
+    "pluralize": "^3.0.0",
+    "pubsub-js": "^1.5.3",
+    "request": "^2.74.0",
+    "request-debug": "^0.2.0",
+    "request-sync": "^1.0.0",
+    "retinasdk": "^1.0.1",
+    "serve-favicon": "~2.3.0",
+    "static": "^2.0.0",
+    "sync-request": "^3.0.1",
+    "waypoints": "^4.0.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

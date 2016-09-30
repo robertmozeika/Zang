@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to Zang</title>
+		<link rel="stylesheet" href="../stylesheets/Helpers/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="../stylesheets/Helpers/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../stylesheets/mainZang.css" />
+		<link rel="stylesheet" href="../stylesheets/Helpers/jquery-ui.min.css">
+
+		<meta http-equiv="refresh" content="1500" >
+	</head>
+		<body>
+
+
+			<div id="initialForm">
+			<div>	<div id="openingText"><h2>What do you want to learn about?</h2></div>
+
+				<form action="" method="post" id="interest" style="display: block" enctype="multipart/form-data">
+					<fieldset>
+
+
+						<input type="text" name="NAinterest" id="NAinterest">
+						<input type="submit" value="ZANG!" id="searchButton">
+
+					</fieldset>
+				</form>
+					</div>
+				</div>
+
+
+			<div class="clear" id="resultContainer" style="display: none">
+
+
+
+				<div id="YTBttnContain">
+					<button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player1Enlarge"> Enlarge </button>
+					<button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player2Enlarge"> Enlarge </button>
+				</div>
+
+
+
+				<div id="YTcontain">
+
+
+					<div id="player1"></div>
+
+					<div id="player2"></div>
+				</div>
+
+					<div id="animalQuickFacts" data-b4Here=SciclassContain style="display: none">
+
+						<div id="sciClassContain"><table id="SciClassTable">
+				        <tbody id="insSciTable">
+
+
+
+
+								</tbody>
+							</table>
+							</div>
+							<div id="QFBttnContain">
+
+									<div class="QFBttn" id="lifeSpanBttn" data-insHere="LFcont">
+
+									</div>
+
+									<div id="foodCont">
+
+									</div>
+
+
+							</div>
+
+				</div>
+
+
+
+
+            <div id="wikiInsert" class="clearfix">
+								<div id="headContain">
+								</div>
+								<div id="paragraphContain"><div>
+						</div>
+      	</div>
+		</div>
+	</div>
+
+
+	<!-- <button onclick="alertCookie()">Show cookies</button>
+	<a href="/Page2/page2.html">next page</a> -->
+
+
+
+						<script type="text/template" id="mHeadButtons">
+							{{#mHeadings}}
+								<div class="showContBttn" id="bttnHead{{index}}">
+									{{str}}
+								</div>
+							{{/mHeadings}}
+						</script>
+
+						<script type="text/template" id="mParaScript">
+							{{#mParagraphs}}
+								<div class="contBodies" id="contBody{{index}}" style="display: none">
+										{{{str}}}
+								</div>
+							{{/mParagraphs}}
+						</script>
+						<script type="text/template" id="mSciClass">
+							<tr>
+								<th colspan="2">Scientific Classification</th>
+							</tr>
+							{{#clObj}}
+							<tr>
+								<td>{{name}}</td>
+								<td>{{result}}</td>
+							</tr>
+							{{/clObj}}
+						</script>
+						<script type="text/template" id="mFoodFacts">
+							<Strong>Feeding Habits</strong>
+								 (click for another fact)
+							{{#FFObj}}
+							<span class="foodFacts" id="foodSentence{{index}}" style="display: none">
+								{{{str}}}</span>
+							{{/FFObj}}
+						</script>
+
+						<script type="text/template" id="mWildYears">
+							{{#years}}
+							<h4>Life Expectancy</h4>
+							<span >
+								Wild: {{Wild}} years</br>
+								(Retrieved from data on {{WildRetrieved}})</br>
+								Captivity: {{Capt}} years</br>
+								(Retrieved from data on {{CaptRetrieved}})
+								</span>
+							{{/years}}
+						</script>
+
+						<script type="text/template" id="mSpringer">
+							{{#springer}}
+							<h4>{{title}}</h4>
+							<span >
+								{{abstract}}
+								</span>
+							{{/springer}}
+						</script>
+
+
+
+<!-- load youtube api -->
+
+<script src="../javascripts/RetinaSDK.js-master/src/retina-sdk.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../stylesheets/Helpers/jquery-ui.min.js"></script>
+<script type='text/javascript' src='../javascripts/pubsub.js'></script>
+<script type='text/javascript' src='../javascripts/wikipediaMod.js'></script>
+<script type='text/javascript' src='../javascripts/youtubeLoad.js'></script>
+<script type='text/javascript' src='../javascripts/categorizerMod.js'></script>
+<script type='text/javascript' src='../javascripts/AICategorizerMod.js'></script>
+<script type='text/javascript' src='../javascripts/zangmainmoduled.js'></script>
+<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+
+
+
+
+				</body>
+
+</html>

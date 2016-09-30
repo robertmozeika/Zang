@@ -1,0 +1,27 @@
+{
+  "name": "retinasdk",
+  "version": "1.0.0",
+  "description": "Retina SDK for Node JS",
+  "main": "retina-sdk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "^2.74.0",
+    "sync-request": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:https://github.com/robertmozeika/RetinaSDKNodeJS.git"
+  },
+  "keywords": [
+    "retina",
+    "cortical"
+  ],
+  "author": "Robert Mozeika <robertmozeika20@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertmozeika/RetinaSDKNodeJS/issues"
+  },
+  "homepage": "https://github.com/robertmozeika/RetinaSDKNodeJS#readme"
+}

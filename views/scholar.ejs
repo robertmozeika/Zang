@@ -1,0 +1,41 @@
+<div>
+
+  <h3 style="text-align: center">Scholarly Articles</h3>
+  <div id="springerFlex">
+    <div class="arrow" id="backArrow">
+      <img id="ar2" src="../ArrowWhite.png" />
+
+    </div>
+
+
+
+<% trial.forEach(function(cont){ %>
+
+    <div class="springerArticleContain" id=<%= "springerArticle".concat(cont.index) %>>
+
+      <h4><%= cont.title %></h4>
+      <span >
+      <%= cont.abstract %>
+      </span><br>
+      <span><a><%= cont.url %></a>&nbsp;&nbsp;&nbsp;&nbsp; <%=cont.copyright%></span>
+    </div>
+<% }) %>
+
+
+
+    <div class="arrow" id="forwardArrow">
+        <img id="ar1" src="../ArrowWhite.png" />
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</div>
