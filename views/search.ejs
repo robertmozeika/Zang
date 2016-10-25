@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<% include header.ejs%>
+      <% include header.ejs %>
 		<link rel="stylesheet" href="../stylesheets/Helpers/bootstrap-theme.min.css" />
 <link rel="stylesheet" href="../stylesheets/Helpers/bootstrap.min.css" />
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="../stylesheets/mainZang.css" />
 		<link rel="stylesheet" href="../stylesheets/Helpers/jquery-ui.min.css">
-		<link rel="stylesheet" type="text/css" href="../stylesheets/person.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheets/animals.css" />
 
 
-		<meta http-equiv="refresh" content="1500" >
 	</head>
 		<body>
 
 
-
-						<% include ZangBox.ejs %>
-
-
-						<div class="clear" id="resultContainer">
-
-							<% include youtube.ejs %>
+			<% include ZangBox.ejs %>
 
 
 
 
-			<!-- maybe clearfix needs to be readded -->
-					<% include wikiInsert.ejs %>
+			<div class="clear" id="resultContainer">
 
-					<div id="longBlackLine"></div>
+				<% include youtube.ejs %>
 
-					<% include scholar.ejs %>
-				</div>
+				<% include animalQF.ejs %>
 
 
-				<% include scriptLoader.ejs %>
 
-<script type='text/javascript' src='../javascripts/regionMain.js'></script>
+<!-- maybe clearfix needs to be readded -->
+		<% include wikiInsert.ejs %>
+
+		<div id="longBlackLine"></div>
+
+    <% include scholar.ejs %>
+	</div>
+
+
+
+		<% include scriptLoader.ejs %>
+
+<script type='text/javascript' src='../javascripts/ejs_fulljslint.js'></script>
 <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 
 

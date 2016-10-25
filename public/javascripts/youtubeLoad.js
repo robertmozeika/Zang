@@ -182,8 +182,11 @@ $('#player1Enlarge').toggle(function()
     $('#player1').removeClass('playReset');
     $('#player2').removeClass('playReset')
     $('#player1').addClass('playBig');
-    $('#player2').addClass('playHide');
-    currentOffSet = "-500px";
+    $('#player1Contain').removeClass('col-sm-6')
+
+    $('#player1Contain').addClass('col-sm-12')
+    $('#player2Contain').addClass('playHide');
+    currentOffSet = $('#player1').height();
     Waypoint.refreshAll();
 
 
@@ -196,9 +199,13 @@ $('#player1Enlarge').toggle(function()
     // $('#player1').css('height',300)
     $('#player2Enlarge').css('opacity', '1');
     $('#player1').removeClass('playBig');
-    $('#player2').removeClass('playHide');
+    $('#player2Contain').removeClass('playHide');
     $('#player1').addClass('playReset');
     $('#player2').addClass('playReset');
+    $('#player1Contain').addClass('col-sm-6')
+
+    $('#player1Contain').removeClass('col-sm-12');
+
     Waypoint.refreshAll();
 
 
@@ -216,7 +223,11 @@ $('#player2Enlarge').toggle(function()
     $('#player2').removeClass('playReset');
     $('#player1').removeClass('playReset')
     $('#player2').addClass('playBig');
-    $('#player1').addClass('playHide');
+    $('#player1Contain').addClass('playHide');
+    $('#player2Contain').removeClass('col-sm-6')
+
+    $('#player2Contain').addClass('col-sm-12');
+
     Waypoint.refreshAll();
 
 
@@ -230,9 +241,13 @@ $('#player2Enlarge').toggle(function()
     $('#player1Enlarge').css('opacity', '1');
     // $('#player2Enlarge').show();
     $('#player2').removeClass('playBig');
-    $('#player1').removeClass('playHide');
+    $('#player1Contain').removeClass('playHide');
     $('#player1').addClass('playReset');
     $('#player2').addClass('playReset');
+    $('#player2Contain').addClass('col-sm-6')
+
+    $('#player2Contain').removeClass('col-sm-12');
+
     Waypoint.refreshAll();
 
 

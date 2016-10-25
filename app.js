@@ -8,14 +8,13 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
 var formidable = require('formidable')
 var ejs = require('ejs')
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var animals = require('./routes/Animals');
 var person = require('./routes/Person');
 var scienceConcept = require('./routes/ScienceConcept');
 var region = require('./routes/Region');
-
+var search = require('./routes/search');
 var app = express();
 
 // view engine setup
@@ -38,6 +37,8 @@ app.use('/Animals', animals);
 app.use('/Person', person);
 app.use('/Region', region);
 app.use('/ScienceConcept', scienceConcept);
+app.use('/search', search);
+
 
 
 

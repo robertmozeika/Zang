@@ -16,24 +16,52 @@ function processAllFieldsOfTheForm(req, res) {
         //on your application.
         var fieldencoded = encodeURIComponent(fields.NAinterest);
         var category = aiCategorizer(fields.NAinterest);
-        console.log(category)
+
+        console.log("cat is now " + category)
+        // if (category === 0) {
+        //   return res.redirect('/Animals?valid=' + pluralize(fieldencoded, 1));
+        // }
+        //
+        // if (category === 1) {
+        //   return res.redirect('/ScienceConcept?valid=' + fieldencoded);
+        // }
+
+        // if ( category === 2) {
+        //   return res.redirect('/Person?valid=' + fieldencoded);
+        // }
+        //
+        // if (8 <= category && category <= 10) {
+        //
+        //   return res.redirect('/Region?valid=' + fieldencoded);
+        // }
+        //
+        // if (4 <= category && category <= 7) {
+        //
+        //   return res.redirect('/ScienceConcept?valid=' + fieldencoded);
+        // }
+
         if (category === 0) {
-          return res.redirect('/Animals?valid=' + pluralize(fieldencoded, 1));
+          return res.redirect('/search?c=an&valid=' + pluralize(fieldencoded, 1));
         }
 
-
-        if ( 1 <= category <= 2) {
-
-          return res.redirect('/Person?valid=' + fieldencoded);
+        if (category === 1) {
+          return res.redirect('/search?c=sc&valid=' + fieldencoded);
         }
-        if (8 <= category <= 10) {
 
-          return res.redirect('/Region?valid=' + fieldencoded);
+        if ( category === 2) {
+          return res.redirect('/search?c=pe&valid=' + fieldencoded);
         }
-        if (4 <= category <= 7) {
 
-          return res.redirect('/ScienceConcept?valid=' + fieldencoded);
+        if (8 <= category && category <= 10) {
+
+          return res.redirect('/search?c=re&valid=' + fieldencoded);
         }
+
+        if (4 <= category && category <= 7) {
+
+          return res.redirect('/search?c=sc&valid=' + fieldencoded);
+        }
+
 
 
     });

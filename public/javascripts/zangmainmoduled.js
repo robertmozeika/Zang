@@ -93,10 +93,11 @@ var resultBox = {
 var limiter = 0
 //function urlBar(){
 //this runs if someone clicks a link, because of wikiMod the link value is added to the url
-if (window.location.search.substring(7) != "" && limiter === 0) {
-	resultBox.selection = window.location.search.substring(7)
+if (window.location.search.substring(12) != "" && limiter === 0) {
+	resultBox.selection = window.location.search.substring(12)
 	resultBox.render()
 	limiter += 1;
+	console.log(window.location)
 }
 
 

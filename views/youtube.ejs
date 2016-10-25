@@ -1,7 +1,7 @@
 <div id="YTBttnContain">
-  <button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player1Enlarge"> Enlarge </button>
-  <button type="button"id="reactYTShow"> Reactivate Scrolling Video </button>
-  <button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player2Enlarge"> Enlarge </button>
+    <button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player1Enlarge"> Enlarge </button>
+    <button type="button" id="reactYTShow"> Reactivate Scrolling Video </button>
+    <button type="button" data-text-swap="Revert" data-text-original="Enlarge" id="player2Enlarge"> Enlarge </button>
 </div>
 
 
@@ -10,10 +10,20 @@
 
 <div id="YTcontain">
 
+    <div class="row">
+        <div id='player1Contain' class="col-sm-6">
+            <div class='maintainAspect'>
 
-  <div id="player1"></div>
 
-  <div id="player2"></div>
+                <div id="player1"></div>
+            </div>
+        </div>
+        <div id='player2Contain' class="col-sm-6">
+            <div class="maintainAspect">
+                <div id="player2"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="closeYTBttn"><img id="ytX" src="../images/x-icon.svg"></div>

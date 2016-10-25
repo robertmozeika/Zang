@@ -140,30 +140,35 @@ var selectionCookie = getCookie("selection");
 
 
 
+      $.getJSON("/Data/ALong.json", function(DTA){
 
-      //   var fixedSpace = resultBox.selection.replace('%20', ' ')
-      //  var tester2 = new RegExp("(" + (fixedSpace || selectionCookie) +")", "gi")
-       //
-      //       for (var i = 0; i < jFile.length; i++){
-      //         var tester = new RegExp(jFile[i]["CommonName"])
-      //         var testedMatch = tester2.test(tester)
-       //
-      //         if ((animalQF.years.Wild === 0) && (testedMatch === true) && (jFile[i]["Wild"] !== "NA"))
-      //          {
-      //            animalQF.years.Wild = jFile[i]["Wild"]
-      //           animalQF.years.WildRetrieved = jFile[i]["CommonName"]
-      //         }
-       //
-      //         if ((animalQF.years.Capt === 0) && (testedMatch === true) && (jFile[i]["Capt"] !== "NA"))
-      //          {animalQF.years.Capt = (jFile[i]["Capt"])
-      //          animalQF.years.CaptRetrieved = jFile[i]["CommonName"]
-      //         }
-       //
-       //
-       //
-      //       }
-       //
-      //       animalQF.render();
+
+
+       var tester2 = new RegExp("(" + (resultBox.selection || selectionCookie) +")", "gi")
+
+            for (var i = 0; i < DTA.length; i++){
+              var tester = new RegExp(DTA[i]["CommonName"])
+              var testedMatch = tester2.test(tester)
+
+              if ((animalQF.years.Wild === 0) && (testedMatch === true) && (DTA[i]["Wild"] !== "NA"))
+               {console.log(DTA[i])
+                 animalQF.years.Wild = DTA[i]["Wild"]
+                animalQF.years.WildRetrieved = DTA[i]["CommonName"]
+              }
+
+              if ((animalQF.years.Capt === 0) && (testedMatch === true) && (DTA[i]["Capt"] !== "NA"))
+               {animalQF.years.Capt = (DTA[i]["Capt"])
+               animalQF.years.CaptRetrieved = DTA[i]["CommonName"]
+              }
+
+
+
+            }
+            console.log("obj is wild " + animalQF.years.Wild)
+            console.log("obj is Capt " + animalQF.years.Capt)
+            animalQF.render();
+
+      })
 
 
 
@@ -316,7 +321,6 @@ var selectionCookie = getCookie("selection");
       }
 
       this.ffData = { FFObj: this.obj_FeedFacts}
-      this.render();
 
     },
 

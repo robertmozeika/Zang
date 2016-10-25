@@ -4,21 +4,16 @@ var path = require('path');
 var formidable = require('formidable');
 var util = require('util');
 var PubSub = require('pubsub-js');
+var request= require('request');
 var AIprocess = require('../Custom_Modules/AIprocess.js')
-var SpringerMod = require('../Custom_Modules/SpringerMod.js');
-var pluralize = require('pluralize');
+var SpringerMod = require('../Custom_Modules/SpringerMod.js')
 
-
-
-
-var request = require('request')
 
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-  var sArr = SpringerMod(req.query.valid, res, 'animal')
-
+  SpringerMod(req.query, res, 'search')
 
 });
 
@@ -26,7 +21,5 @@ router.post('/', function(req, res){
   console.log('posted');
   AIprocess(req, res);
 })
-
-
 
 module.exports = router;

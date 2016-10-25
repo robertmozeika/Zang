@@ -18,6 +18,22 @@
 }
 
 
+#animalQuickFacts {
+	/*display:flex;
+	justify-content: space-between;;*/
+	/*margin-bottom: 10px;
+	flex-wrap: wrap;*/
+
+}
+#animalQuickFacts *{
+	/*display:flex;
+	justify-content: space-between;;
+	/*margin-bottom: 10px;*/
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+
+}
+
 .QFBttn{
 	display:block;
 	min-height: 25px;
@@ -37,9 +53,10 @@
 #lifeSpanBttn{
 
 	display:inline-block;
-	max-width: 300px;
+	/*max-width: 300px;*/
 	height: 138px;
-	min-width: 200px;
+	/*min-width: 200px;*/
+	/*font-size: 1vw*/
 
 }
 
@@ -117,13 +134,7 @@ height: 140px;
 
 }
 
-#animalQuickFacts {
-	display:flex;
-	justify-content: space-between;;
-	margin-bottom: 10px;
-	flex-wrap: wrap;
 
-}
 
 /*#animalQuickFacts * {
 	margin-top: 10px;

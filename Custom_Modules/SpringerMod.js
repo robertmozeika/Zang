@@ -6,7 +6,7 @@ var request = require('request');
 
 function springerMod(query, res, page){
 
-  request("http://api.springer.com/metadata/json?q=title:%22"+ query + "%22&p=10&api_key=99b0beee028a8fd93c6d9221b925072b",  function (error, response, body) {
+  request("http://api.springer.com/metadata/json?q=title:%22"+ query.valid + "%22&p=10&api_key=99b0beee028a8fd93c6d9221b925072b",  function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var whole = JSON.parse(body)
 
@@ -30,7 +30,7 @@ function springerRender(retrieved, req, res){
     springer: springerArr
   }
 
-  res.render(page, { slct: query, trial: springerArr });
+  res.render(page, { slct: query.valid, trial: springerArr, cat: query.c });
 
 }
 

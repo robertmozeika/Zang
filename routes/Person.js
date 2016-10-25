@@ -15,7 +15,6 @@ router.get('/', function(req, res, next) {
 
   SpringerMod(req.query.valid, res, 'person')
 
-
 });
 
 router.post('/', function(req, res){
